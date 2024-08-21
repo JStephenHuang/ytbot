@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "cli"
+version = "0.1.0"
+description = ""
+authors = ["J.Stephen <j.stephen.huang.developer@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9.0, <3.12"
+
+
+requests = "^2.32.3"
+tts = "^0.22.0"
+diffusers = "^0.30.0"
+accelerate = "^0.33.0"
+torch = {version = "^2.4.0+cu124", source = "pytorch-gpu"}
+torchvision = {version = "^0.19.0+cu124", source = "pytorch-gpu"}
+torchaudio = {version = "^2.4.0+cu124", source = "pytorch-gpu"}
+typer = "^0.12.3"
+[[tool.poetry.source]]
+name = "pytorch-gpu"
+url = "https://download.pytorch.org/whl/cu124"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+cli = "cli.app:app"
