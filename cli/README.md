@@ -29,3 +29,17 @@ poetry run cli
     # Returns a video file
 
     # Use Youtube Data API to upload the video
+
+# AI Model Setup
+
+Check your NVIDIA CUDA version by running `nvcc --version` in your terminal. 
+If no verison is found, download the latest cuda version that pytorch offers, at the time I am writing this, pytorch latest CUDA Version is 12.4.
+
+Follow:
+https://pytorch.org/ 
+
+AI Model Requirements:
+TTS => https://github.com/coqui-ai/TTS/blob/dev/requirements.txt
+Stable Diffusion => ?
+
+Do not stress yourself over this.
